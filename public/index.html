@@ -24,11 +24,20 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <!-- <link href="%PUBLIC_URL%/assets/libs/chartist/dist/chartist.min.css" rel="stylesheet"> -->
+    <!-- Custom CSS -->
+    <link href="%PUBLIC_URL%/dist/css/style.min.css" rel="stylesheet">
     <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
+    <div class="preloader">
+      <div class="lds-ripple">
+        <div class="lds-pos"></div>
+        <div class="lds-pos"></div>
+      </div>
+    </div>
+    <div id="main-wrapper"></div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -39,5 +48,28 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script src="%PUBLIC_URL%/assets/libs/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="%PUBLIC_URL%/assets/libs/popper.js/dist/umd/popper.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="%PUBLIC_URL%/assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/libs/jquery-sparkline/jquery.sparkline.min.js"></script>
+    <!-- apps -->
+    <script src="%PUBLIC_URL%/dist/js/app.min.js"></script>
+    <script src="%PUBLIC_URL%/dist/js/app.init.js"></script>
+    <!-- Theme settings -->
+    <script src="%PUBLIC_URL%/dist/js/app-style-switcher.js"></script>
+    <!--Wave Effects -->
+    <script src="%PUBLIC_URL%/dist/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="%PUBLIC_URL%/dist/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="%PUBLIC_URL%/dist/js/feather.min.js"></script>
+    <script src="%PUBLIC_URL%/dist/js/custom.min.js"></script>
+    <!--This page JavaScript -->
+    <!-- <script src="%PUBLIC_URL%/assets/libs/chartist/dist/chartist.min.js"></script>
+    <script src="%PUBLIC_URL%/assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js"></script> -->
+    <script src="%PUBLIC_URL%/dist/js/pages/dashboards/dashboard2.js"></script>
   </body>
 </html>
